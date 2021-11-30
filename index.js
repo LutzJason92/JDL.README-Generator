@@ -5,7 +5,7 @@ inquirer
   .prompt([
     {
       type: "input",
-      message: "What is your first and Last name?",
+      message: "What is your First and Last name?",
       name: "NAME",
     },
     {
@@ -147,7 +147,7 @@ function createREADME(response) {
 
 - [Description](#description)
 - [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
+- [Demonstration](#demonstration)
 - [Setup](#setup)
 - [Usage](#usage)
 - [Project Updates](#project-updates)
@@ -169,7 +169,7 @@ function createREADME(response) {
 
 ${response.UPDATES}
 
-## Screenshots
+## Demonstration
 
 ![Screenshot of deployed Application](${response.SCREENSHOT})
 
