@@ -157,11 +157,11 @@ function createREADME(response) {
 
 ## Project Status
 
-#### The status of this Project is currently:
+#### The status of Project ${response.TITLE} is currently:
 
 - ##### ${response.STATUS}
 
-#### Why is is the status of the project ${response.STATUS}:
+#### Why is is the status of the Project ${response.STATUS}:
 
 - ##### ${response.WHYSTATUS}
 
@@ -195,19 +195,19 @@ To use this application, you must have the following technologies installed:
 
 ## Questions
 
--This application was created by [${response.NAME}](mailto:${response.CONTACT})
+This application was created by: [${response.NAME}](mailto:${response.CONTACT})
 
-- I encourage you to send me an email if you have any questions or comments.
+- I encourage you to send me an email if you have any questions or comments. 
 
 ## Contributors
 
-Thank you to these GitHub users for your contributions:
+Thank you to these GitHub users for thier contributions:
 
 - https://github.com/${response.CONTRIBUTORS}
 
 ## License
 
-- This appplication was under the ${response.LICENSE} license.
+- This appplication is currently using a ${response.LICENSE} license.
 
 
   `;
