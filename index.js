@@ -10,14 +10,36 @@ inquirer
     },
     {
       type: "input",
-      message: "Write a Description of the Project.",
+      message: "Write a Description of the Project. !DOUBLE CHECK FOR TYPOS!",
       name: "DESCRIPTION",
+    },
+    {
+      type: "input",
+      message:
+        "What problem does this application intend to solve? !DOUBLE CHECK FOR TYPOS!",
+      name: "SOLVES",
     },
     {
       type: "input",
       message:
         "What technologies were used to create this command line application?",
       name: "TECH",
+    },
+    {
+      type: "input",
+      message: "How does the user use this application?",
+      name: "USAGE",
+    },
+    {
+      type: "input",
+      message:
+        "Provide a relative path to an screenshot of the deployed Application",
+      name: "SCREENSHOT",
+    },
+    {
+      type: "input",
+      message: "Provide a link to a GIF of the deployed Application",
+      name: "APPGIF",
     },
     {
       type: "input",
@@ -79,8 +101,20 @@ inquirer
       type: "list",
       message:
         "How should a user contact the developer if they have any questions?",
-      name: "QUESTIONS",
+      name: "CONTACT",
       choices: ["LutzJason92@gmail.com", "Jason.Lutz@du.edu"],
+    },
+    {
+      type: "list",
+      message: "What is the status of this project?",
+      name: "STATUS",
+      choices: ["_complete_", "_in progress_", "_no longer being worked on_"],
+    },
+    {
+      type: "input",
+      message:
+        "Explain the reason behind your selection of the Project Status.",
+      name: "WHYSTATUS",
     },
   ])
 
