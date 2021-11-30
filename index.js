@@ -5,6 +5,11 @@ inquirer
   .prompt([
     {
       type: "input",
+      message: "What is your first and Last name?",
+      name: "NAME",
+    },
+    {
+      type: "input",
       message: "What is the Title of this Project",
       name: "TITLE",
     },
@@ -105,6 +110,11 @@ inquirer
       choices: ["LutzJason92@gmail.com", "Jason.Lutz@du.edu"],
     },
     {
+      type: "input",
+      message: "What updates or improvements are planned for future releases?",
+      name: "UPDATES",
+    },
+    {
       type: "list",
       message: "What is the status of this project?",
       name: "STATUS",
@@ -118,17 +128,87 @@ inquirer
     },
   ])
 
-  .then((userInputs) => {
+  .then((response) => {
     // take response and write to new file
     // args - arg1 what file? arg2 what data?
-    fs.writeFile("README.md", createREADME(userInputs), (err) => {
+    fs.writeFile("README.md", createREADME(response), (err) => {
       err ? console.error(err) : console.log("file was writen");
     });
   });
 
-function createREADME(userInputs) {
+function createREADME(response) {
   return `
+  
+  # ${response.TITLE}
+
+?License=${response.LICENSE}&logo=appveyor
+
+## Table of Contents
+
+- [Description](#description)
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Project Updates](#project-updates)
+- [Project Status](#project-status)
+- [Have any Questions](#questions)
+- [License](#license)
+
+## Project Status
+
+#### The status of this Project is currently:
+
+- ##### ${response.STATUS}
+
+#### Why is is the status of the project ${response.STATUS}:
+
+- ##### ${response.WHYSTATUS}
+
+## Project Updates
+
+${response.UPDATES}
+
+## Screenshots
+
+![Screenshot of deployed Application](${response.SCREENSHOT})
+
+Live demo [_here_](${response.APPGIF}).
+
+## Description
+
+- ${response.DESCRIPTION}
+
+## Technologies Used
+
+- ${response.TECH}
+
+## Setup
+
+To use this application, you must have the following technologies installed:
+
+- ${response.SETUP}
+
+## Usage
+
+- ${response.USAGE}
+
+## Questions
+
+-This application was created by [${response.NAME}](mailto:${response.CONTACT})
+
+- I encourage you to send me an email if you have any questions or comments.
+
+## Contributors
+
+Thank you to these GitHub users for your contributions:
+
+- https://github.com/${response.CONTRIBUTORS}
+
+## License
+
+- This appplication was under the ${response.LICENSE} license.
 
 
-    `;
+  `;
 }
