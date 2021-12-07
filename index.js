@@ -141,7 +141,7 @@ function createREADME(response) {
   
   # ${response.TITLE}
 
-?License=${response.LICENSE}&logo=appveyor
+[![License: AGPL v3](https://img.shields.io/badge/License-${response.LICENSE}-blue.svg)]
 
 ## Table of Contents
 
