@@ -131,7 +131,7 @@ inquirer
   .then((response) => {
     // take response and write to new file
     // args - arg1 what file? arg2 what data?
-    fs.writeFile("README.md", createREADME(response), (err) => {
+    fs.writeFile("generatedREADME.md", createREADME(response), (err) => {
       err ? console.error(err) : console.log("file was writen");
     });
   });

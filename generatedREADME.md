@@ -1,4 +1,6 @@
-# README.md Generator
+
+  
+  # README.md Generator
 
 [![License: AGPL v3](https://img.shields.io/badge/License-mit-blue.svg)]
 
@@ -30,7 +32,7 @@ none
 
 ## Demonstration
 
-![Screenshot of deployed Application](assets/images/ReadMescreenshot.png)
+![Screenshot of deployed Application](assets/images/App-Screensshot.png)
 
 Live demo [_here_](assets/images/READMEGenerator.gif).
 
@@ -56,7 +58,7 @@ To use this application, you must have the following technologies installed:
 
 This application was created by: [Jason Lutz](mailto:LutzJason92@gmail.com)
 
-- I encourage you to send me an email if you have any questions or comments.
+- I encourage you to send me an email if you have any questions or comments. 
 
 ## Contributors
 
@@ -67,3 +69,6 @@ Thank you to these GitHub users for thier contributions:
 ## License
 
 - This appplication is currently using a mit license.
+
+
+  
